@@ -35,7 +35,9 @@ a {
 header {
   background-color: #333;
   padding: 20px;
+  text-align: center;
 }
+
 
 nav ul {
   display: flex;
@@ -60,27 +62,40 @@ nav ul li a:hover {
   color: #aaa;
 }
 
+.profile-picture {
+  flex: 0 0 auto;
+  margin-left: 20px;
+  margin-top: 5px;
+  float: left;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
 /* Hero section */
 #hero {
-  background-color: #f5f5f5;
-  padding: 20px 0;
+  /*background-color: #f5f5f5;*/
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  padding: 30px 0;
   text-align: center;
 }
 
 .hero-content {
   max-width: 600px;
   margin: 0 auto;
+  color: #b0e0e6;
 }
 
 .hero-title {
   font-size: 36px;
-  color: #333;
   margin-bottom: 20px;
 }
 
 .hero-description {
   font-size: 18px;
-  color: #666;
   margin-bottom: 40px;
 }
 
@@ -100,12 +115,33 @@ nav ul li a:hover {
   background-color: #555;
 }
 
-/* About section */
 #about {
-  background-color: #fff;
+  background-color: #f7f7f7;
   padding: 40px;
   text-align: justify;
 }
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
 
 /* Projects section */
 #projects {
