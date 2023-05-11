@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Deigant Yadava - Personal Website</title>
-  <link rel="stylesheet" type="text/css" href="styles.css"> <!-- External CSS file for styling -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome for icons -->
+  <meta charset="UTF-8">
+  <title>Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
@@ -15,53 +15,83 @@
       </ul>
     </nav>
   </header>
-  
+
   <section id="hero">
-    <div class="hero-text">
+    <div class="hero-content">
       <h1>Deigant Yadava</h1>
-      <h2>Software Developer &amp; Creative Thinker</h2>
-      <a href="#contact" class="cta-button">Get in touch</a>
+      <h2>Software Developer & Creative Thinker</h2>
+      <a href="#contact" class="btn">Contact Me</a>
     </div>
   </section>
-  
+
   <section id="about">
     <h2>About Me</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla tellus vitae leo pulvinar, vel viverra neque rhoncus. Mauris aliquet erat nec velit gravida consequat.</p>
-    <p>Sed imperdiet orci nec nunc dignissim, et tincidunt metus rhoncus. Proin vel ligula et metus condimentum finibus sed nec erat.</p>
+    <p>
+        Hi, I'm Deigant, a passionate and results-driven Computer Science professional with a strong background in software development and a focus on cutting-edge technologies. With a Master's degree in Computer Science from Carnegie Mellon University and experience working at top tech companies like Amazon, I am dedicated to solving complex problems and pushing the boundaries of innovation.
+      </p>
+      <p>
+        Throughout my academic journey, I have gained expertise in deep learning, computer vision, and natural language processing. I have successfully completed projects such as developing conversational agents, question answering systems, and computer vision models. My experience as a Teaching Assistant at Carnegie Mellon University has enhanced my communication and leadership skills, allowing me to effectively mentor and guide others.
+      </p>
+      <p>
+        I am driven by a passion for technology and a desire to make a positive impact. I thrive in dynamic and collaborative environments, where I can contribute my technical expertise and problem-solving skills to drive innovation and deliver high-quality solutions. I am continuously learning and exploring new advancements in the field to stay at the forefront of technology.
+      </p>
+      <p>
+        Thank you for visiting my website. I am excited about the opportunity to collaborate on projects that challenge me and contribute to the advancement of technology. Let's connect and explore how we can create amazing things together.
+      </p>
   </section>
-  
+
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project">
-      <img src="project1.jpg" alt="Project 1">
-      <div class="project-details">
-        <h3>Project 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla tellus vitae leo pulvinar, vel viverra neque rhoncus.</p>
-        <a href="#" class="project-link">View Project <i class="fas fa-chevron-right"></i></a>
+    <div class="projects">
+      <div class="project">
+        <img src="images/End_To_End_Simple.jpeg" alt="Project 1 Thumbnail" class="project-thumbnail">
+        <div class="project-description">
+          <h3 class="project-title">A Conversational Agent to Aid Human Language Learning</h3>
+          <p class="project-details">Jan 2023 - Present</p>
+          <p>Developing an adaptive reinforcement learning based agent that can help humans learn a new language by conversing with the agent.</p>
+          <p>The agent consists of a knowledge tracing model, that will develop a representation of the current skill level of the user, and a conversation generator that will develop conversations with the user based on the knowledge representation.</p>
+          <a href="https://drive.google.com/file/d/1yF-NP5HgoZ4kNJvTx1Hn4IhVzwpKOBWR/view?usp=sharing" class="btn">View Details</a>
+        </div>
+
       </div>
-    </div>
-    <div class="project">
-      <img src="project2.jpg" alt="Project 2">
-      <div class="project-details">
-        <h3>Project 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla tellus vitae leo pulvinar, vel viverra neque rhoncus.</p>
-        <a href="#" class="project-link">View Project <i class="fas fa-chevron-right"></i></a>
+      <div class="project">
+        <img src="images/QA_System_Diagram.png" alt="Project 2 Thumbnail" class="project-thumbnail">
+        <div class="project-description">
+          <h3 class="project-title">Question Answering and Generation using Language Models</h3>
+          <p class="project-details">Sept. 2022 - Dec. 2022</p>
+          <p>Developed two independent systems to answer questions and generate questions given a Wikipedia article.</p>
+          <p>Each system consisted of a pipeline wherein each step made use of customized transformer models (developed on top of XLNet, BERT, and T5 base models).</p>
+          <a href="https://drive.google.com/file/d/1TGTb3Z2CiXEbMEymWmCSHj-1k3w_P2mh/view?usp=sharing" class="btn">View Details</a>
+        </div>
+        
       </div>
     </div>
   </section>
-  
+
   <section id="contact">
     <h2>Contact Me</h2>
-    <form>
-      <input type="text" name="name" placeholder="Your Name">
-      <input type="email" name="email" placeholder="Your Email">
-      <textarea name="message" placeholder="Your Message"></textarea>
-      <input type="submit" value="Send Message">
-    </form>
-  </section>
-  
-  <footer>
-    <p>&copy; 2023 Your Name. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div class="form-group">
+      <input type="submit" value="Send Message" class="btn">
+      </div>
+      </form>
+
+        </section>
+        <footer>
+          <p>&copy; 2023 Deigant Yadava. All rights reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+      </body>
+      </html>
