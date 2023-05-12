@@ -13,3 +13,15 @@ document.getElementById("contact-form").addEventListener("submit", function(even
   // Open mail client
   window.location.href = mailtoLink;
 });
+
+window.addEventListener('scroll', function() {
+  var header = document.querySelector('.fixed-header');
+  var headerHeight = header.offsetHeight;
+  var scrollTop = window.pageYOffset;
+
+  if (scrollTop > 0) {
+    header.classList.add('scroll-header');
+  } else {
+    header.classList.remove('scroll-header');
+  }
+});

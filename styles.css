@@ -3,11 +3,11 @@
 }
 
 .about-text {
-  animation: slidein 2s 1;
+  animation: slidein_right 2s 1;
 }
 
 .project {
-  animation: slidein_right 3s 1;
+  animation: slidein 3s 1;
 }
 
 .profile-picture {
@@ -98,10 +98,20 @@ a {
 }
 
 /* Header */
-header {
+.scroll-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: top 0.3s ease;
+}
+
+.fixed-header {
   background-color: #6c5b7b;
   padding: 20px;
   text-align: center;
+  transition: top 0.3s ease;
 }
 
 nav ul {
@@ -127,6 +137,19 @@ nav ul li a:hover {
   color: #aaa;
 }
 
+.name-header {
+  position: absolute;
+  padding-left: 10px; 
+}
+
+.name-header a {
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.name-header a:hover {
+  color: #aaa;
+}
 .social-links {
   position: absolute;
   right: 0;
@@ -144,12 +167,15 @@ nav ul li a:hover {
 
 .profile-picture {
   flex: 0 0 auto;
-  margin-left: 20px;
-  margin-top: 5px;
   float: left;
+  padding-right: 20px;
 }
 
 .profile-picture img {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   width: 200px;
   height: 200px;
@@ -198,7 +224,7 @@ nav ul li a:hover {
 /* About */
 #about {
   background-color: #fff;
-  padding: 40px;
+  padding: 20px;
   text-align: justify;
 }
 
