@@ -7,19 +7,18 @@
 </head>
 <body>
 
-  <header class = "fixed-header">
-    <div class="name-header">
-      <a href = "#"> Deigant Yadava </a>
-    </div>
-    <div class="social-links">
-    <a href="https://www.linkedin.com/in/deigant-yadava-346401160/" target="_blank"><img src="images/LinkedIn_Icon.webp" alt="LinkedIn"></a>
-    <a href="https://github.com/deigant1998" target="_blank"><img src="images/github_icon.png" alt="GitHub"></a>
-  </div>
-  <nav class="navbar">
+  <header class = "scroll-header fixed-header">
+  <nav class="sidebar">
+    
+  
+
     <ul class="navbar-menu">
       <li><a href="#about">About</a></li>
+      <li><a href="#interests">Interest</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="https://github.com/deigant1998" target="_blank">Github</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -34,21 +33,30 @@
     </div>
   </section> -->
 
+  <div class="content">
   <section id="about">
   <div class="about-container">
     <div class="profile-picture">
       <img src="images/Post_Image.jpeg" alt="Deigant">
     </div>
     <div class="about-text">
-      <h2>About Me</h2>
+      <h2>Deigant Yadava</h2>
       <p>Hi, I'm Deigant, a passionate and results-driven Computer Science professional with a strong background in software development and a focus on cutting-edge technologies. With a Master's degree in Computer Science from Carnegie Mellon University and experience working at top tech companies like Amazon, I am dedicated to solving complex problems and pushing the boundaries of innovation.</p>
       <p>Throughout my academic journey, I have gained expertise in deep learning, computer vision, and natural language processing. I have successfully completed projects such as developing conversational agents, question answering systems, and computer vision models. My experience as a Teaching Assistant at Carnegie Mellon University has enhanced my communication and leadership skills, allowing me to effectively mentor and guide others.</p>
       <p>I am driven by a passion for technology and a desire to make a positive impact. I thrive in dynamic and collaborative environments, where I can contribute my technical expertise and problem-solving skills to drive innovation and deliver high-quality solutions. I am continuously learning and exploring new advancements in the field to stay at the forefront of technology.</p>
-      <p>Thank you for visiting my website. I am excited about the opportunity to collaborate on projects that challenge me and contribute to the advancement of technology. Let's connect and explore how we can create amazing things together.</p>
+      <p>Thank you for visiting my website. I am excited about the opportunity to collaborate on projects that challenge me and contribute to the advancement of technology. Let's connect and explore how we can create amazing things together.You can reach out to me via <a href="https://www.linkedin.com/in/deigant-yadava-346401160/" target="_blank">LinkedIn</a> or <a href="#contact">Email</a> (deigant1998@gmail.com).</p>
     </div>
   </div>
 </section>
 
+<section id="interests">
+  <h2>Interests</h2>
+  <ul class="interests-list">
+    <li>Building end-to-end applications with a comprehensive understanding of the software development lifecycle.</li>
+    <li>Developing intelligent agents that leverage data from modalities such as language or vision to tackle complex tasks and find innovative solutions.</li>
+    <li>Integrating diverse technologies and frameworks to create robust and seamless software solutions, including applications that harness the power of intelligent agents working with multimodal data.</li>
+  </ul>
+</section>
 
 <section id="projects">
   <h2>Projects</h2>
@@ -69,8 +77,8 @@
         <div class="project-description">
           <h3 class="project-title">Question Answering and Generation using Language Models</h3>
           <p class="project-details">Sept. 2022 - Dec. 2022</p>
-          <p>Developed two independent systems to answer questions and generate questions given a Wikipedia article.</p>
-          <p>Each system consisted of a pipeline wherein each step made use of customized transformer models (developed on top of XLNet, BERT, and T5 base models).</p>
+          <p>Created two distinct systems capable of providing answers to questions and generating new questions based on a given Wikipedia article.</p>
+          <p>Implemented a structured pipeline for each system, utilizing custom transformer models built upon XLNet, BERT, and T5 base models at every stage.</p>
           <a href="https://drive.google.com/file/d/1TGTb3Z2CiXEbMEymWmCSHj-1k3w_P2mh/view?usp=sharing" class="btn">View Details</a>
         </div>
         
@@ -105,9 +113,9 @@
       <p class="job-title">Software Development Engineer 2</p>
       <p class="job-date">July 2019 - July 2022</p>
       <ul class="job-responsibilities">
-        <li>End to End Encryption Platform: Designed the complete cloud architecture for a new end-to-end encryption platform and led a team to create and deploy three new micro-services in AWS for the same.</li>
-        <li>Infrastructure Modernization: Migrated multiple on-prem services handling ∼1 million transactions/second to make use of the latest AWS technologies.</li>
-        <li>Data Replication Framework: Designed and developed a generic cross-regional data replication and verification algorithm for NoSQL databases to improve availability and add redundancy to services.</li>
+        <li>End to End Encryption Platform: Led the design of a comprehensive cloud architecture for an end-to-end encryption platform, overseeing the creation and deployment of three new microservices in AWS.</li>
+        <li>Infrastructure Modernization: Successfully migrated numerous on-premises services, which processed approximately 1 million transactions per second, to leverage the latest AWS technologies, resulting in infrastructure modernization.</li>
+        <li>Data Replication Framework: Devised and implemented a versatile cross-regional data replication and verification algorithm for NoSQL databases, enhancing service availability and introducing redundancy through a data replication framework.</li>
       </ul>
     </div>
   </div>
@@ -120,6 +128,14 @@
       <h3>Citrix Systems, Bangalore, India</h3>
       <p class="job-title">Software Development Engineer Intern</p>
       <p class="job-date">Jan 2019 - June 2019</p>
+      <ul class="job-responsibilities">
+        <li>
+          Developed the Alerting feature for Citrix Director, enabling customers to monitor and manage their deployed Citrix Virtual Machines. The webpage allowed users to set up alarms, efficiently view and filter triggered alerts and track anomalies in their deployed system.
+        </li>
+        <li>
+          Implemented an algorithm using KMeans to analyze and categorize customer login durations on Citrix Virtual Machines.Identified and investigated steps in the login procedure that resulted in higher latency, aiding in improving the login performance.
+        </li>
+      </ul>
     </div>
   </div>
 
@@ -140,6 +156,36 @@
   <!-- Add more experience items as needed -->
 
 </section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="education-container">
+    <div class="education-item">
+      <div class="thumbnail">
+        <img src="images/CMU_Thumb.png" alt="Carnegie Mellon University">
+      </div>
+      <div class="education-details">
+        <h3>Carnegie Mellon University</h3>
+        <p>Master of Science in Computer Science; GPA: 4.28/4.0</p>
+        <p>Pittsburgh, PA</p>
+      </div>
+    </div>
+    <div class="education-item">
+      <div class="thumbnail">
+        <img src="images/Manipal_Logo.png" alt="Manipal Institute of Technology">
+      </div>
+      <div class="education-details">
+        <h3>Manipal Institute of Technology</h3>
+        <p>B.Tech. in Computer Science and Engineering; GPA: 9.91/10</p>
+        <p>Manipal, India</p>
+        <p>Minor specialization in Intelligent Systems</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
   <section id="contact">
     <h2>Contact Me</h2>
@@ -162,9 +208,11 @@
       </form>
 
         </section>
+      
         <footer>
           <p>&copy; 2023 Deigant Yadava. All rights reserved.</p>
         </footer>
+        </div>
         <script src="script.js"></script>
       </body>
       </html>

@@ -5,6 +5,9 @@
 .about-text {
   animation: slidein_right 2s 1;
 }
+#interests {
+  animation: slidein_right 2s 1;
+}
 
 .project {
   animation: slidein 3s 1;
@@ -98,73 +101,48 @@ a {
 }
 
 /* Header */
-.scroll-header {
+.sidebar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  z-index: 999;
-  transition: top 0.3s ease;
-}
-
-.fixed-header {
-  background-color: #6c5b7b;
+  width: 200px; /* Adjust the width as needed */
+  height: 100vh; /* Adjust the height as needed */
+  background-color: #6c5b7b; /* Adjust the background color */
+  color: #fff;
   padding: 20px;
-  text-align: center;
-  transition: top 0.3s ease;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
+.sidebar ul {
+  list-style: none;
+  padding-top: 100%;
+  margin: 0;
+  font-family: 'BrunoAceSC', cursive;
+  font-size: 20px;
 }
 
-nav ul li {
-  margin-right: 20px;
+.sidebar ul li {
+  margin-bottom: 10px;
 }
 
-nav ul li:last-child {
-  margin-right: 0;
-}
-
-nav ul li a {
+.sidebar ul li a {
   color: #fff;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  text-decoration: none;
 }
 
-nav ul li a:hover {
+
+.sidebar ul li a:hover {
   color: #aaa;
 }
 
-.name-header {
-  position: absolute;
-  padding-left: 10px; 
+.content {
+  margin-left: 200px; /* Adjust the margin-left to match the width of the sidebar */
 }
 
-.name-header a {
-  color: #fff;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-.name-header a:hover {
-  color: #aaa;
-}
-.social-links {
-  position: absolute;
-  right: 0;
-  top: 5px;
-}
 
-.social-links a {
-  margin-right: 10px;
+@font-face {
+  font-family: BrunoAceSC;
+  src: url(font/Bruno_Ace_SC/BrunoAceSC-Regular.ttf);
 }
-
-.social-links img {
-  width: 45px;
-  height: auto;
-}
-
 .profile-picture {
   flex: 0 0 auto;
   float: left;
@@ -251,10 +229,38 @@ nav ul li a:hover {
   color: #333;
 }
 
+
+/* Interests section */
+#interests {
+  background-color: #f7f7f7;
+  padding: 40px;
+  text-align: justify;
+}
+
+#interests h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #6c5b7b;
+}
+
+.interests-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.interests-list li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+
 /* Experience */
 #experience {
   padding: 40px;
-  background-color: #fff;
+  background-color: #f7f7f7;
 }
 
 .experience-item {
@@ -311,7 +317,7 @@ nav ul li a:hover {
 
 /* Projects section */
 #projects {
-  background-color: #f7f7f7;
+  background-color: #fff;
   padding: 40px;
   text-align: justify;
 }
@@ -413,8 +419,8 @@ textarea {
 
 /* Footer */
 footer {
-  background-color: #6c5b7b;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   text-align: center;
   padding: 20px;
 }
@@ -443,3 +449,53 @@ footer {
     margin-bottom: 20px;
   }
 }
+
+/* Education section */
+#education {
+  padding: 40px;
+  background-color: #fff;
+}
+
+.education-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.education-item {
+  flex-basis: calc(50% - 20px);
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.thumbnail {
+  flex: 0 0 100px;
+  margin-right: 20px;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.education-details {
+  flex: 1;
+}
+
+.education-details h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #6c5b7b;
+}
+
+.education-details p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.education-details p:last-child {
+  margin-bottom: 0;
+}
+
+
