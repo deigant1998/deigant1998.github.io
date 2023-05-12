@@ -7,14 +7,15 @@
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="navbar">
+    <ul class="navbar-menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
   <div class="profile-picture">
       <img src="images/Post_Image.jpeg" alt="Deigant">
@@ -40,8 +41,72 @@
   </div>
 </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
+<section id="experience">
+  <h2>Experience</h2>
+
+  <div class="experience-item">
+    <div class="experience-thumbnail">
+      <img src="images/CMU_Thumb.png" alt="Experience Thumbnail 1">
+    </div>
+    <div class="experience-details">
+      <h3>Carnegie Mellon University, Pittsburgh, PA</h3>
+      <p class="job-title">Teaching Assistant, Distributed Systems (15-440/640)</p>
+      <p class="job-date">Jan 2023 - Present</p>
+      <ul class="job-responsibilities">
+        <li>Provided student support through one-on-one office hours and recitation sessions to ensure the clarity of course content, problem sets, as well as projects.</li>
+        <li>Assisted faculty members in developing problem sets/assignments for the course as well as grading the problem sets and projects, providing detailed feedback to the students.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="experience-item">
+    <div class="experience-thumbnail">
+      <img src="images/Amazon_Thumb.webp" alt="Experience Thumbnail 2">
+    </div>
+    <div class="experience-details">
+      <h3>Amazon, Chennai, India</h3>
+      <p class="job-title">Software Development Engineer 2</p>
+      <p class="job-date">July 2019 - July 2022</p>
+      <ul class="job-responsibilities">
+        <li>End to End Encryption Platform: Designed the complete cloud architecture for a new end-to-end encryption platform and led a team to create and deploy three new micro-services in AWS for the same.</li>
+        <li>Infrastructure Modernization: Migrated multiple on-prem services handling ∼1 million transactions/second to make use of the latest AWS technologies.</li>
+        <li>Data Replication Framework: Designed and developed a generic cross-regional data replication and verification algorithm for NoSQL databases to improve availability and add redundancy to services.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="experience-item">
+    <div class="experience-thumbnail">
+      <img src="images/Citrix_Thumb.png" alt="Experience Thumbnail 3">
+    </div>
+    <div class="experience-details">
+      <h3>Citrix Systems, Bangalore, India</h3>
+      <p class="job-title">Software Development Engineer Intern</p>
+      <p class="job-date">Jan 2019 - June 2019</p>
+    </div>
+  </div>
+
+  <div class="experience-item">
+    <div class="experience-thumbnail">
+      <img src="images/Amazon_Thumb.webp" alt="Experience Thumbnail 4">
+    </div>
+    <div class="experience-details">
+      <h3>Amazon, Chennai, India</h3>
+      <p class="job-title">Software Development Engineer Intern</p>
+      <p class="job-date">May 2018 - July 2018</p>
+      <ul class="job-responsibilities">
+        <li>Created an architecture to support near real-time refreshing of host level caches in a backend cloud service consisting of 800 hosts at any time (providing a refresh SLA of 10 minutes).</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Add more experience items as needed -->
+
+</section>
+
+
+<section id="projects">
+  <h2>Projects</h2>
     <div class="projects">
       <div class="project">
         <img src="images/End_To_End_Simple.jpeg" alt="Project 1 Thumbnail" class="project-thumbnail">
