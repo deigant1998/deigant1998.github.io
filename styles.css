@@ -145,6 +145,7 @@ nav ul li a:hover {
 /*Experience*/
 #experience {
   padding: 40px;
+  background-color: #fff;
 }
 
 .experience-item {
