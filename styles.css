@@ -134,6 +134,7 @@ a {
   color: #aaa;
 }
 
+
 .content {
   margin-left: 200px; /* Adjust the margin-left to match the width of the sidebar */
 }
@@ -497,5 +498,66 @@ footer {
 .education-details p:last-child {
   margin-bottom: 0;
 }
+
+/* Skills section */
+#skills {
+  background-color: #f7f7f7;
+  padding: 40px;
+  text-align: left;
+}
+
+.section-title {
+  margin-bottom: 40px;
+  color: #6c5b7b;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.skills-column {
+  flex: 1 0 200px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills-heading {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #6c5b7b;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.skills-item {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.skills-item i {
+  margin-right: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .skills-column {
+    flex: 1 0 auto;
+    margin: 10px 0;
+  }
+}
+
+
 
 
