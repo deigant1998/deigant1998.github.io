@@ -499,9 +499,52 @@ footer {
   margin-bottom: 0;
 }
 
+/* Publications section */
+#publications {
+  background-color: #f7f7f7;
+  padding: 40px;
+  text-align: justify;
+}
+
+#publications h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #6c5b7b;
+}
+
+.publication {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.publication img {
+  width: 180px;
+  height: auto;
+  margin-right: 20px;
+  padding-top: 10px
+}
+
+.publication-content {
+  flex-grow: 1;
+}
+
+.publication h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #6c5b7b;
+}
+
+.publication-description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
 /* Skills section */
 #skills {
-  background-color: #f7f7f7;
+  background-color: #fff;
   padding: 40px;
   text-align: left;
 }
