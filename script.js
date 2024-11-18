@@ -8,7 +8,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
   var message = document.getElementById("message").value;
 
   // Generate mailto link with form data
-  var mailtoLink = "mailto:dyadava@andrew.cmu.edu?subject=New Message&body=Name: " + name + "%0D%0AEmail: " + email + "%0D%0AMessage: " + message;
+  var mailtoLink = "mailto:deigant1998@gmail.com?subject=New Message&body=Name: " + name + "%0D%0AEmail: " + email + "%0D%0AMessage: " + message;
 
   // Open mail client
   window.location.href = mailtoLink;
